@@ -1,0 +1,26 @@
+{
+  "name": "voting",
+  "version": "1.0.0",
+  "description": "Free Code Camp Voting Application",
+  "main": "server.js",
+  "engines": {
+    "node": "4.7.3",
+    "npm": "2.15.11"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "M1Gi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chart.js": "^2.5.0",
+    "client-sessions": "^0.8.0",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.10.2",
+    "request": "^2.81.0"
+  }
+}

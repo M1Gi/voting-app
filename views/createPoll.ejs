@@ -1,0 +1,26 @@
+<% include header.ejs %>
+    <% include nav.ejs %>
+        <section class="about">
+            <div class="registration">
+                <div class="form-container">
+                    <form id="signup" method="POST" action="">
+                        <div class="header">
+                            <h3>Create poll</h3>
+                            <p>Create your own custom poll with at least 3 options</p>
+                        </div>
+                        <div class="sep"></div>
+                        <div class="inputs">
+                            <input maxlength="65" required type="text" placeholder="Title" name="title" autofocus />
+                            <input maxlength="40"required type="text" placeholder="Choice #1" name="choice1" />
+                             <input maxlength="40"required type="text" placeholder="Choice #2" name="choice2" />
+                              <input maxlength="40"required type="text" placeholder="Choice #3" name="choice3" />
+
+                            <input type="button" id="add-button" value="Add">
+                            <input type="submit" id="submit" value="Create">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <% include footer.ejs %>

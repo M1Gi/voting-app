@@ -1,0 +1,27 @@
+<% include header.ejs %>
+    <% include nav.ejs %>
+        <section class="about">
+            <div class="registration">
+                <div class="form-container">
+                    <form id="signup" method="POST" action="">
+                        <div class="header">
+                            <h3>Login</h3>
+                            <p>Sign in with your account details</p>
+                        </div>
+                        <div class="sep"></div>
+                        <div class="inputs">
+                            <input required type="text" placeholder="Username" name="username" autofocus />
+                            <input required type="password" placeholder="Password" name="password" />
+
+                            <input type="submit" id="submit" value="Login">
+                            <% if (error) { %>
+                                <p id="error-message">
+                                    <%=errorMessage %>
+                                </p>
+                                <%}%>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <% include footer.ejs %>

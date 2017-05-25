@@ -1,0 +1,29 @@
+<% include header.ejs %>
+    <% include nav.ejs %>
+    
+        <section class="polls">
+            <div class="headings-container">
+                <h1>View All Your Polls</h1>
+                <% if (nopolls) { %>
+                    <p><%=nopolls%></p>
+                <%} else {%>
+                <p>These are all the polls you have created, you can edit or share them.</p>
+                <%}%>
+            </div>
+            <div class="main-aligner">
+                <% for (var i = 0; i < myPolls.length; i++) { %>
+                    <div class="new-poll">
+                        <h1>Vote</h1>
+                        <div class="title">
+                            <%= myPolls[i].title %>
+                                <div class="poll-link">
+                                    <a href="polls/<%= myPolls[i]._id %>">VIEW POLL</a>
+                                </div>  
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </section>
+
+
+        <% include footer.ejs %>

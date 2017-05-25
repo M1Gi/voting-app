@@ -1,0 +1,31 @@
+<% include header.ejs %>
+    <% include nav.ejs %>
+
+        <section class="polls">
+            <div class="headings-container">
+                <h1>View All Current Polls</h1>
+                <p>Enables you to create custom polls, or select custom voting options on existing polls.</p>
+            </div>
+            <div class="main-aligner">
+                <% for (var i = 0; i < allPolls.length; i++) { %>
+                    <div class="new-poll-container">
+                        <div class="new-poll">
+                            <h1>Vote</h1>
+                            <div class="title">
+                                <%= allPolls[i].title %>
+                                    <div class="poll-link">
+                                        <a href="polls/<%= allPolls[i]._id %>">VIEW POLL</a>
+                                        <div class="created-by">
+                                            <p>Created by:</p>
+                                            <p><strong>  <%=allPolls[i].createdBy %></strong></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </section>
+
+
+        <% include footer.ejs %>

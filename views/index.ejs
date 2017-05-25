@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <%include nav.ejs %>
+            <section class="about">
+                <div class="main-aligner">
+                    <div class="pic-intro-container">
+                        <div class="about-intro">
+                            <i id="bar-logo" class="fa fa-2x fa-bar-chart" aria-hidden="true"></i>
+                            <h1>Voting Application</h1>
+                            <h2>Voting in realtime.</h2>
+                            <p>
+                                A web-based application that enables you to vote on various polls, create your own custom polls, and share them
+                                with your friends. You can view the results in realtime! This application uses Node.js and
+                                Express.js on the back-end, and HTML5, CSS3, jQuery, and Chart.js on the front-end. Check out the
+                                <a target="_blank" class="repo-link" href="https://github.com/M1Gi/voting-app"><strong>GitHub repo</strong></a> here.
+                            </p>
+                            <div class="btn-container">
+                                <% if (authenticated) { %>
+                                    <a href="/mypolls">My Polls</a>
+                                    <span>or</span>
+                                    <a href="/polls">View Polls</a>
+                                    <% } else { %>
+                                        <a href="/signup">Get Started</a>
+                                        <span>or</span>
+                                        <a href="/polls">View Polls</a>
+                                        <%}%>
+                            </div>
+                        </div>
+
+
+                        <div class="about-pic">
+                            <img src="placeholder.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+<% include footer.ejs %>

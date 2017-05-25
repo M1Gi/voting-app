@@ -1,0 +1,87 @@
+<nav class="nav-bar">
+    <div class="main-aligner">
+        <% if (authenticated) { %>
+            <div class="bar-holder">
+                <i id="bar" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="mobile-nav">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/polls">Polls</a>
+                </li>
+                <li>
+                    <a href="/mypolls">My Polls</a>
+                </li>
+                <li>
+                    <a href="/createpoll">Create Poll</a>
+                </li>
+                <li>
+                    <a href="/logout">Logout</a>
+                </li>
+            </ul>
+            <ul class="main-nav">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/polls">Polls</a>
+                </li>
+                <li>
+                    <a href="/createpoll">Create Poll</a>
+                </li>
+            </ul>
+            <%} else { %>
+                <div class="bar-holder">
+                    <i id="bar" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </div>
+                <ul class="mobile-nav">
+                    <li>
+                        <a href="/">Home</a>    
+                    </li>
+                    <li>
+                        <a href="/polls">Polls</a>
+                    </li>
+                    <li>
+                        <a href="/signup">Register</a>
+                    </li>
+                    <li>
+                        <a href="/login">Login</a>
+                    </li>
+                </ul>
+                <ul class="main-nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/polls">Polls</a>
+                    </li>
+                    <li>
+                        <a href="/login">Login</a>
+                    </li>
+                </ul>
+                <%} %>
+
+                    <% if (authenticated) { %>
+                        <ul class="register">
+                            <li>
+                                <a href="/logout">Logout</a>
+                            </li>
+                        </ul>
+                        <div class="clr"></div>
+                        <% } else { %>
+                            <ul class="register">
+                                <li>
+                                    <a id="git" href="https://github.com/login/oauth/authorize?scope=public&state=1825d8cac26bac4dbb30ed23eb4d48732302fcf7&client_id=d16eba0091d4d33fdffb" >
+                                        <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/signup">Register</a>
+                                </li>
+                            </ul>
+                            <div class="clr"></div>
+                            <% }%>
+    </div>
+</nav>

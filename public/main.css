@@ -1,0 +1,586 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+    font-size:16px;
+    word-spacing: 1px;
+}
+
+.clr{
+    clear:both;
+}
+
+.wrapper{
+    max-width:100%;
+}
+
+.repo-link{
+    color:#fff;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.nav-bar{
+    background:#5c5c5c;
+    max-height:100%;
+    box-shadow:0.3px 0.5px 1px black;
+    position: relative;
+    z-index: 1000000;
+}
+
+.main-aligner{
+    max-width:1170px;   
+    margin:0 auto;
+}
+
+.mobile-nav{
+    display:none;
+}
+
+.bar-holder{
+    display:none
+}
+
+.main-nav{
+    list-style: none;
+    height:auto;
+    display:inline-block;
+    padding:20px 0;   
+}
+
+.main-nav li{
+    float:left;
+    display:block;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color:#999999;
+    padding:20px;
+}
+
+.active-class{
+    background-color:#222222;
+}
+
+
+.main-nav a:hover{
+     color:#fff;
+}
+
+.register{
+    float: right;
+    margin-top:20px;
+    list-style: none;
+}
+
+.register li{
+    float:right;
+}
+
+.register a{
+    text-decoration: none;
+    color:#999999;
+    padding:20px;
+}
+
+.register a:focus{
+     background-color:#222222;
+}
+
+.register a:hover{
+     color:#fff;
+}
+
+#git{
+    position: relative;
+    bottom:4px;
+}
+
+#git:focus{ 
+    background-color:transparent!important;
+}
+
+.about{
+    background-image:url('./bgg.jpg');
+    overflow: auto;
+    overflow-y: hidden;
+    min-height:100%;
+}
+
+
+
+.about-intro{
+    margin-top:60px;
+    width:50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.about-intro h1{
+    font-family: 'Patua One', cursive;
+    font-size:4em;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.about-intro h2{
+    font-size:18px;
+    line-height:35px;
+    color:#999;
+}
+
+.about-intro p{
+    color:white;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-size:18px;
+    padding:15px;
+    text-align: left;
+}
+
+#bar-logo{
+    color:#99cc00;
+    position: relative;
+    top:8px;
+}
+
+.btn-container{
+    text-align: left;
+    margin:30px 0 80px 8px;
+}
+
+span{
+    color:white;
+}
+
+.btn-container a{
+    background-color:#0055cc;
+    padding:10px;
+    text-decoration: none;
+    color:white;
+    margin:0 10px;
+    border-radius: 3px;
+    box-shadow: inset 0.3px 0.3px 0.3px white;
+}
+
+.btn-container a:active{
+    box-shadow: 0.3px 0.3px 0.3px black;
+}
+
+.btn-container a:hover{
+    opacity:0.95;
+}
+.about-pic{
+    display:inline-block;
+    text-align: center;
+}
+
+.about-pic img{
+    width:50%;
+}
+
+.registration{
+    text-align: center;
+    margin-top:100px;
+}
+
+.form-container {
+    width: 406px;
+    max-width: 406px;
+    margin: 0 auto;
+}
+
+#signup {
+    padding: 25px 25px 25px 25px;
+    background: #fff;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    border-radius: 5px;
+    display: table;
+    position: static;
+}
+
+#signup .header {
+    margin-bottom: 20px;
+}
+
+#signup .header h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#signup .header p {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#signup .sep {
+    height: 1px;
+    background: #e8e8e8;
+    width: 406px;
+    margin: 0px -25px;
+}
+
+#signup .inputs {
+    margin-top: 25px;
+}
+
+#signup .inputs label {
+    color: #8f8f8f;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+input::-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+
+input:-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+#signup .inputs input[type=text], input[type=password] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+#signup .inputs input[type=text]:focus, input[type=password]:focus {
+    background: #fff;
+    box-shadow: 0px 0px 0px 3px #00baec, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    outline: none;   
+}
+
+
+
+#signup .inputs #submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+        background: -moz-linear-gradient(
+        top,
+        #b9c5dd 0%,
+        #a4b0cb);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#b9c5dd),
+        to(#a4b0cb));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #737b8d;
+    -moz-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
+
+#add-button{
+        width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+        background: -moz-linear-gradient(
+        top,
+        #b9c5dd 0%,
+        #a4b0cb);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#b9c5dd),
+        to(#a4b0cb));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #737b8d;
+    -moz-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
+
+#signup .inputs #submit:hover {
+    cursor: pointer;
+}
+
+#error-message{
+    position: relative;
+    top:10px;
+}
+
+.polls{
+    max-width: 100%;
+    background:#00baec;
+    overflow:auto;
+    min-height:100%;
+}
+
+.headings-container{
+    text-align: center;
+    color:white;
+}
+
+.headings-container h1{
+    font-size:40px;
+    margin:1em auto;
+    text-align: center;
+}
+
+.headings-container p{
+    font-size:20px;
+    line-height:1.4;
+    margin-bottom:1em;
+}
+
+.new-poll-container{
+    display:inline-block;
+}
+
+.new-poll{
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    background-color:white;
+    display: inline-block;
+    margin:30px 40px;
+}
+
+.new-poll h1{
+    text-align: center;
+    color:#0080ff;
+    font-size:36px;
+    line-height: 40px;
+    margin-top:50px;
+}
+
+.title{
+    color:#505050;
+    text-align: center;
+    width:60%;
+    margin:10px auto;
+}
+
+.new-poll a{
+    background-color: #0055cc;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    box-shadow: inset 0.3px 0.3px 0.3px white;
+    position: relative;
+}
+
+.poll-link{
+    margin:30px auto;
+}
+
+.chart-container{
+    max-width: 100%;
+    margin:30px auto;
+}
+
+.options-container{
+    max-width:100%;
+    text-align: center;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+.options-container p{
+    background-color: #0055cc;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    box-shadow: inset 0.3px 0.3px 0.3px white;
+    position: relative;
+}
+
+.choice-container{
+    display:inline-block;
+}
+
+#custom{
+    background-color: #0055cc;
+    padding: 8px;
+    border-radius: 30px;
+    border:none;
+    outline:none;
+    color:white;
+    max-width:200px;
+}
+
+#custom-form{
+    margin:20px 0;
+}
+
+.vote-container{
+    display: inline-block;
+}
+
+.custom-form-container{
+        text-align: center
+}
+
+#vote-button{
+    background-color: #0055cc;
+    padding: 8px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    color:white;
+    cursor: pointer;
+}
+
+#delete-button{
+    background-color:#b30000;
+    padding: 8px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    color:white;
+    cursor: pointer;
+}
+
+.chart-container form{
+    display: inline-block;
+}
+
+.created-by{
+    margin-top:20px;
+}
+
+@media screen and (max-width: 1026px){
+
+    .pic-intro-container{
+        text-align: center;
+    }
+
+    .about-intro{
+       min-width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 779px){
+   .new-poll-container{
+    display:block;
+    text-align: center;
+   } 
+}
+
+@media screen and (min-width: 600px){
+    .mobile-nav{
+        display:none !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #signup{
+        transform:scale(0.88);
+    }
+
+    .nav-bar .main-nav{
+        display: none;
+    }
+
+     .nav-bar .register{
+        display: none;
+     }
+
+     .bar-holder{
+        text-align: center;   
+        color:#999999;
+        display:block;
+        padding:11px 0;
+     }
+
+
+    #bar:hover{
+        color:#FFF
+    }
+
+    #bar{
+        cursor:pointer;
+        padding-bottom:4px;
+    }
+
+    .mobile-nav{
+        display:none;
+        list-style: none;
+        height:auto;
+        padding-top:15px;
+        text-align:center;
+    }
+
+    .mobile-nav li{
+        border-top:1px solid #999999;
+        padding:3px 0;
+    }
+
+    .mobile-nav a{
+        text-decoration: none;
+        color: #999999;
+    }
+    .mobile-nav a:hover{
+        color:#fff;
+        cursor: pointer;
+    }
+
+    .mobile-nav li:hover{
+        background-color:#222222;
+    }
+}

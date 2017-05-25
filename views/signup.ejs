@@ -1,0 +1,25 @@
+<% include header.ejs %>
+    <% include nav.ejs %>
+        <section class="about">
+            <div class="registration">
+                <div class="form-container">
+                    <form id="signup" method="POST" action="">
+                        <div class="header">
+                            <h3>Sign Up</h3>
+                            <p>You want to fill out this form</p>
+                        </div>
+                        <div class="sep"></div>
+                        <div class="inputs">
+                            <input maxlength="21" required type="text" placeholder="Username" name="username" autofocus />
+                            <input required type="password" placeholder="Password" name="password" />
+
+                            <input type="submit" id="submit" value="Register">
+                           <% if (error) { %>
+                                <p id="error-message"><%=errorMessage %> </p>
+                           <%}%>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <% include footer.ejs %>
